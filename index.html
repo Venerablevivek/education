@@ -59,6 +59,12 @@
     .logo{
       display: none;
     }
+    .logo-name img{
+      margin-top: -15px;
+    }
+    .name-uni{
+      display: none;
+    }
     }
 
     
@@ -68,7 +74,7 @@
 <body>
 
   <!-- Sub Header -->
-  <div class="sub-header">
+  <!-- <div class="sub-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-sm-8">
@@ -88,19 +94,21 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky" >
       <div class="container">
           <div class="row">
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
                       <a href="index.html" class="logo ">
+                        <img src="assets/images/College to campus logo.jpeg" style="width: 50px;" />
                         College to Campus
                       </a>
                       <a href="index.html" class="logo-name ">
+                        <img src="assets/images/College to campus logo.jpeg" style="width: 50px;" />
                         College to Campus
                       </a>
                       <!-- ***** Logo End ***** -->
@@ -108,7 +116,7 @@
                       <ul class="nav">
                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                           <li><a href="#">Forms</a></li>
-                          <li><a href="#">Apply Now</a></li>
+                          <li><a href="">Apply Now</a></li>
                          
                           <li class="scroll-to-section"><a href="#">University</a></li> 
                           <li class="scroll-to-section"><a href="#">Contact Us</a></li> 
@@ -130,12 +138,13 @@
           <source src="assets/images/course-video.mp4" type="video/mp4" />
       </video>
 
-      <div class="video-overlay header-text">
+      <div class=" header-text">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
               <div class="caption" style="margin-top: -35px;" >
-                <form id="contact" action="" method="post">
+                <form id="contact" action="https://api.web3forms.com/submit" method="POST" >
+                  <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
                   <div class="row">
                     <div class="col-lg-12">
                       <h4 style="color: white;margin-bottom: 15px;" >Fill your Details</h4>
@@ -260,64 +269,64 @@
               <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/bharati-vidya-peeth.html">Bharati Vidyapeeth Medical College
                 </a>
                 <div style="display: flex; gap: 100px; align-items: center;" >
-                  <p style="font-weight: 600;" >Pune</p>
+                  <p class="name-uni" style="font-weight: 600;" >Pune</p>
                 <button class="enquiryBtn">Enquiry</button>
                 </div>
               </li>
                 
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/christianclg.html">Christian Medical College, Vellore</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Vellore</p>
+                <p class="name-uni" style="font-weight: 600;" >Vellore</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/dyPatil.html">Dr. D. Y. Patil Vidyapeeth Medical College </a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Pune</p>
+                <p class="name-uni" style="font-weight: 600;" >Pune</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/Hamdard.html">Hamdard Institute of Medical Sciences & Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Delhi</p>
+                <p class="name-uni" style="font-weight: 600;" >Delhi</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/kasturbaclg.html">Kasturba Medical College, Manipal</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Manipal</p>
+                <p class="name-uni" style="font-weight: 600;" >Manipal</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/mm-Institure.html">M.M Institute of Medical Sciences and Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Haryana</p>
+                <p class="name-uni" style="font-weight: 600;" >Haryana</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/ramaih.html">Ramaiah Medical College</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Bengaluru</p>
+                <p class="name-uni" style="font-weight: 600;" >Bengaluru</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/school-of-medical-science.html">School of Medical Sciences & Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Noida</p>
+                <p class="name-uni" style="font-weight: 600;" >Noida</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/shri-guru-ram-rai-institute.html">Shri Guru Ram Rai Institute of Medical & Health Sciences</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Dehradun</p>
+                <p class="name-uni" style="font-weight: 600;" >Dehradun</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sree-balaji-medical-college.html">Sree Balaji Medical College & Hospital</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Chennai</p>
+                <p class="name-uni" style="font-weight: 600;" >Chennai</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sri-ramachandra-institute.html">Sri Ramachandra Institute of Higher Education and Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Chennai</p>
+                <p class="name-uni" style="font-weight: 600;" >Chennai</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
             <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/swami-rama-himalayan.html">Swami Rama Himalayan University</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p style="font-weight: 600;" >Sangatiya Walakhur, Uttarakhand</p>
+                <p class="name-uni" style="font-weight: 600;" >Sangatiya Walakhur, Uttarakhand</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
 
@@ -325,7 +334,8 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Enquiry Form</h2>
-            <form id="enquiryForm">
+            <form id="enquiryForm" action="https://api.web3forms.com/submit" method="POST" >
+              <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
                 <div>
                   <label for="name">Name*</label>
                 <input type="text" id="name" name="name" required>
@@ -812,29 +822,30 @@
         <div class="col-lg-7 align-self-center">
           <div class="row">
             <div class="col-lg-9">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Let's get in touch</h2>
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                      <input name="name" type="text" id="name" placeholder="Name*" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email*" required="">
                   </fieldset>
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
-                    </fieldset>
+                    <input name="phone" type="number" id="phone" placeholder="Phone*" required="">
+                  </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Message*" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
