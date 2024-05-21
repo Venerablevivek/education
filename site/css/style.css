@@ -14229,3 +14229,12 @@ button[type="submit"]:hover {
 	grid-template-columns: repeat(2,1fr);
 	gap: 5px;
 }
+
+.form-main-data{
+	background-color: gainsboro;
+	padding: 25px 30px;
+	border-radius: 15px;
+  }
+
+
+
