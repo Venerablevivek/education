@@ -49,7 +49,51 @@
       margin-top: 40px;
     }
 
-    @media screen and (max-width:760px) {
+    .univ-list:hover{
+      width: 100%;
+      background-color: gainsboro;
+      padding: 12px 16px;
+      border-radius: 15px;
+      color: white;
+      cursor: pointer;
+      transition: all 300ms ease;
+    }
+
+    .sticky-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.sticky-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.sticky-buttons a img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.phone-button {
+    background-color: gainsboro;
+}
+
+@media screen and (max-width:760px) {
       .form-new{
       display: grid; grid-template-columns: repeat(1,1fr); gap: 5px;
     }
@@ -72,8 +116,22 @@
     .form-main{
       margin-top: -30px;
     }
-    }
+    .sticky-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
 
+    .sticky-buttons a img {
+        width: 30px;
+        height: 30px;
+    }
+  }
     
 
   </style>
@@ -138,6 +196,14 @@
       </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  <div class="sticky-buttons">
+    <a href="https://wa.me/9263215183" target="_blank" class="whatsapp-button">
+        <img src="./assets/images/WhatsApp_icon-removebg-preview.png" alt="WhatsApp">
+    </a>
+    <a href="tel:+9042846238" class="phone-button">
+        <img src="./assets/images/iphone-telephone-logo-computer-icons-red-call-icon-11553520215xtqxhnnj6r-removebg-preview.png" alt="Phone">
+    </a>
+</div>
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
@@ -151,7 +217,7 @@
               <div class="col-lg-12">
               <div class="caption form-main " >
                 <form id="contact" action="https://api.web3forms.com/submit" method="POST" >
-                  <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
+                  <input type="hidden" name="access_key" value="c43c7402-3a75-42ee-b3a9-9bdb47b2e423">
                   <div class="row">
                     <div class="col-lg-12">
                       <h4 style="color: white;margin-bottom: 15px;" >Fill your Details</h4>
@@ -273,7 +339,7 @@
           <div class="categories" >
             <!-- <h4>Universities list</h4> -->
             <ul style="list-style: disc; display: flex; flex-direction: column;" >
-              <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/bharati-vidya-peeth.html">Bharati Vidyapeeth Medical College
+              <li class="univ-list" style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/bharati-vidya-peeth.html">Bharati Vidyapeeth Medical College
                 </a>
                 <div style="display: flex; gap: 100px; align-items: center;" >
                   <p class="name-uni" style="font-weight: 600;" >Pune</p>
@@ -281,59 +347,59 @@
                 </div>
               </li>
                 
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/christianclg.html">Christian Medical College, Vellore</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/christianclg.html">Christian Medical College, Vellore</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Vellore</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/dyPatil.html">Dr. D. Y. Patil Vidyapeeth Medical College </a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/dyPatil.html">Dr. D. Y. Patil Vidyapeeth Medical College </a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Pune</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/Hamdard.html">Hamdard Institute of Medical Sciences & Research</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/Hamdard.html">Hamdard Institute of Medical Sciences & Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Delhi</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/kasturbaclg.html">Kasturba Medical College, Manipal</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/kasturbaclg.html">Kasturba Medical College, Manipal</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Manipal</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/mm-Institure.html">M.M Institute of Medical Sciences and Research</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/mm-Institure.html">M.M Institute of Medical Sciences and Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Haryana</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/ramaih.html">Ramaiah Medical College</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/ramaih.html">Ramaiah Medical College</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Bengaluru</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/school-of-medical-science.html">School of Medical Sciences & Research</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/school-of-medical-science.html">School of Medical Sciences & Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Noida</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/shri-guru-ram-rai-institute.html">Shri Guru Ram Rai Institute of Medical & Health Sciences</a>
+            <li class="univ-list"  style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/shri-guru-ram-rai-institute.html">Shri Guru Ram Rai Institute of Medical & Health Sciences</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p class="name-uni" style="font-weight: 600;" >Dehradun</p>
+                <p class="name-uni" style="font-weight: 600;" >Uttarakhand</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sree-balaji-medical-college.html">Sree Balaji Medical College & Hospital</a>
+            <li class="univ-list" style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sree-balaji-medical-college.html">Sree Balaji Medical College & Hospital</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Chennai</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sri-ramachandra-institute.html">Sri Ramachandra Institute of Higher Education and Research</a>
+            <li class="univ-list" style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/sri-ramachandra-institute.html">Sri Ramachandra Institute of Higher Education and Research</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
                 <p class="name-uni" style="font-weight: 600;" >Chennai</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
-            <li style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/swami-rama-himalayan.html">Swami Rama Himalayan University</a>
+            <li class="univ-list" style="display: flex; justify-content: space-between;align-items: center; " ><a href="site/swami-rama-himalayan.html">Swami Rama Himalayan University</a>
               <div style="display: flex; gap: 100px; align-items: center;" >
-                <p class="name-uni" style="font-weight: 600;" >Sangatiya Walakhur, Uttarakhand</p>
+                <p class="name-uni" style="font-weight: 600;" >Uttarakhand</p>
               <button class="enquiryBtn">Enquiry</button>
               </div>
 
@@ -342,7 +408,7 @@
             <span class="close">&times;</span>
             <h2>Enquiry Form</h2>
             <form id="enquiryForm" action="https://api.web3forms.com/submit" method="POST" >
-              <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
+              <input type="hidden" name="access_key" value="c43c7402-3a75-42ee-b3a9-9bdb47b2e423">
                 <div>
                   <label for="name">Name*</label>
                 <input type="text" id="name" name="name" required>
@@ -830,7 +896,7 @@
           <div class="row">
             <div class="col-lg-9">
               <form id="contact" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f5b84b25-c253-416c-b881-68d0a80a31cc">
+                <input type="hidden" name="access_key" value="c43c7402-3a75-42ee-b3a9-9bdb47b2e423">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Let's get in touch</h2>
@@ -892,6 +958,38 @@
       </div>
     </div>
     <div class="footer">
+      <footer class="section footer-standard bg-gray-700">
+        <div class="footer-standard-main">
+          <div class="container">
+            <div class="row row-50">
+              <div class="col-lg-4">
+                <div class="inset-right-1">
+                  <h4>College to Campus</h4>
+                  <p style="text-align: justify;" >Colleges to Campus is a leading consultancy catering exclusively to MBBS and MD admissions. Our team of highly qualified professionals assists students in selecting the right college and course based on their aptitude, financial budget, and preferences. We offer career counseling, guidance on entrance examinations, application processes, and mock interview sessions, all provided free of cost.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-4">
+                <div class="box-1">
+                  <h4>Contact Information</h4>
+                  <ul class="list-sm">
+                    <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">Guindy Institutional Area, SIDCO Industrial
+                      Estate, Guindy, Chennai, Tamil Nadu 600032</a></li>
+                    <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#">9263215183, 9042846238</a></li>
+                    <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">collegestocampus@gmail.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-7 col-lg-4" style="display: flex; flex-direction: column;gap: 10px;cursor: pointer;" >
+                <h4>Quick Links</h4>
+                <a href="site/privacyPolicy.html" >Privacy Policy</a>
+                <a href="site/terms-and-condition.html" >Terms & Conditions</a>
+                <a href="site/refundPolicy.html" >Refund Policy</a>
+                <a href="#" >Disclaimer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
       <p>Copyright © 2024 College to Campus, Ltd. All Rights Reserved.</p>
     </div>
   </section>
@@ -954,6 +1052,30 @@
         $(window).scroll(function () {
           checkSection();
         });
+
+        // Optional JavaScript for additional interactivity or functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const whatsappButton = document.querySelector('.whatsapp-button');
+    const phoneButton = document.querySelector('.phone-button');
+
+    whatsappButton.addEventListener('mouseover', function() {
+        whatsappButton.style.transform = 'scale(1.1)';
+    });
+
+    whatsappButton.addEventListener('mouseout', function() {
+        whatsappButton.style.transform = 'scale(1)';
+    });
+
+    phoneButton.addEventListener('mouseover', function() {
+        phoneButton.style.transform = 'scale(1.1)';
+    });
+
+    phoneButton.addEventListener('mouseout', function() {
+        phoneButton.style.transform = 'scale(1)';
+    });
+});
+
+
     </script>
 </body>
 
